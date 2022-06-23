@@ -1,0 +1,86 @@
+Git Commands:
+1. Staging files are ready to commit.
+ git add . or git add -A or git add "file name"-to track particular files.
+ 
+2. Initialize Git repo
+ git init
+ 
+3. Set basic user configuration variables
+ git config --global user.name <your_name>
+git config --global user.email <your_email_id>
+
+4. Repository Status
+ git status
+ 
+5. Commit 
+git commit -m "commit_message"
+//if you dont give "-m" and the commit message, it will open an editor to type the commit message there
+or
+git commit -a -m "commit_message"
+
+6. Append a commit
+git commit --amend -m "updated commit message" //to edit only the commit message of the last commit
+or
+git commit --amend --no-edit //to modify files and include in last commit
+
+7. Log of the commits and show full change history
+git log
+
+8. Show differences in various commits
+git diff
+
+Branches
+9. Create a new branch
+git branch <new_branch_name>
+
+10. Checkout to another branch
+git checkout <that new branch name>
+or
+git checkout -b <new_branch_name> //to create a new branch and automatically switch to it
+
+11.Delete a branch
+git branch -d <branch name>
+or
+git branch -D <branch name> //to force delete a branch
+
+12. List of all the branches
+git branch
+
+13. Merge two branches
+//checkout to the branch you want to merge to
+git merge <branch you want to merge>
+
+14. Abort a merge
+git merge --abort
+
+15. List the changes dates and authors of the file
+ git blame "file"
+ 
+16. Fetch the latest changes from origin and merge
+ git pull
+ 
+17. Fetch the latest changes from origin and rebase
+ git pull --rebase
+ 
+18. push local changes to the origin
+ git push
+ 
+19. download from existing repository
+ git clone
+ 
+20. get the latest change in the origin(no merge)
+ git fetch
+ 
+21. Tag the current commit
+ git tag
+ 
+22. Applying some commit from one branch to another
+ git cherry-pick
+ 
+23. When you pull their changes into your local repository, you’ll notice that there is a conflict. This happens because Git no idea whether your friend’s version is the updated version or your version is the updated version. This is what we call a Git conflict.- Git conflict
+
+24.Clone via HTTPS Clone with Git or checkout with SVN using the repository’s web address. Learn more about clone URLs Download ZIP. Raw automation.yml This file contains bidirectional Unicode text that may be interpreted or compiled differently than what appears below. To review, open the file in an editor that reveals hidden Unicode characters-git automation.yml
+
+25. The git stashcommand takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy
+ git stash
+
